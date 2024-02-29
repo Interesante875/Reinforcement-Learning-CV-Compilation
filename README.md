@@ -94,3 +94,4 @@ The subpixel detection involves refining the position of object features by cons
 
 Where:
 - \( I(i, j) \) is the intensity value at pixel \((i, j)\).
+- 
