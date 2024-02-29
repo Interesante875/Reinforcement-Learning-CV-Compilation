@@ -76,7 +76,7 @@ Subpixel detection is crucial for achieving higher precision in locating object 
 
 The Zernike polynomials, denoted as \(Z_{nm}\), are defined on the unit circle as follows:
 
-\[ Z_{nm}(r, \theta) = R_n^m(r) \cdot \cos(m \cdot \theta) \]
+$$ Z_{nm}(r, \theta) = R_n^m(r) \cdot \cos(m \cdot \theta) $$
 
 Where:
 - \( n \) and \( m \) are integers with \( n \geq m \geq 0 \).
@@ -88,10 +88,9 @@ Where:
 
 The subpixel detection involves refining the position of object features by considering the intensity distribution. The refined position \( (x', y') \) can be calculated using the weighted average of neighboring pixel positions:
 
-\[ x' = \frac{\sum_{i,j} I(i, j) \cdot i}{\sum_{i,j} I(i, j)} \]
+$$ x' = \frac{\sum_{i,j} I(i, j) \cdot i}{\sum_{i,j} I(i, j)} $$
 
-\[ y' = \frac{\sum_{i,j} I(i, j) \cdot j}{\sum_{i,j} I(i, j)} \]
+$$ y' = \frac{\sum_{i,j} I(i, j) \cdot j}{\sum_{i,j} I(i, j)} $$
 
 Where:
 - \( I(i, j) \) is the intensity value at pixel \((i, j)\).
-- 
